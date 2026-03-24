@@ -37,19 +37,20 @@ section section {
   background: #e6e6e6;
   border-radius: 10px;
   margin-bottom: 12px;
+  overflow: hidden;
 }
 
 section section h2 {
   background: #d0d0d0;
   margin: 0;
-  padding: 8px;
+  padding: 10px;
   font-size: 16px;
 }
 
 ul {
   list-style: none;
   margin: 0;
-  padding: 8px;
+  padding: 10px;
 }
 
 li {
@@ -58,29 +59,31 @@ li {
 }
 
 @media (min-width: 768px) {
+
   body {
     padding: 0;
   }
+
   main {
     display: flex;
   }
+
   nav {
     display: block;
-    width: 220px;
+    width: 240px;
     background: #dcdcdc;
     padding: 20px;
     height: 100vh;
   }
+
   nav h2 {
     margin-top: 0;
-    font-size:35px
+    font-size: 20px;
   }
-  nav ul {
-    padding: 0;
-  }
+
   nav li {
     margin: 15px 0;
-    font-size: 20px
+    font-size: 16px;
   }
 
   .conteudo {
@@ -89,12 +92,16 @@ li {
   }
 
   header h1 {
-    font-size:50px;  
+    font-size: 28px;
+  }
+
+  .subtitulo {
+    font-size: 18px;
   }
 
   section section {
     max-width: 600px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
   }
 
 }
