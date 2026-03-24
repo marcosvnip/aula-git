@@ -33,14 +33,14 @@ header img {
   color: #444;
 }
 
-section section {
+.conteudo > section {
   background: #e6e6e6;
   border-radius: 10px;
   margin-bottom: 12px;
   overflow: hidden;
 }
 
-section section h2 {
+.conteudo > section h2 {
   background: #d0d0d0;
   margin: 0;
   padding: 10px;
@@ -58,7 +58,8 @@ li {
   margin-bottom: 6px;
 }
 
-@media (min-width: 768px) {
+
+@media (width >= 768px) {
 
   body {
     padding: 0;
@@ -81,6 +82,10 @@ li {
     font-size: 20px;
   }
 
+  nav ul {
+    padding: 0;
+  }
+
   nav li {
     margin: 15px 0;
     font-size: 16px;
@@ -99,7 +104,7 @@ li {
     font-size: 18px;
   }
 
-  section section {
+  .conteudo > section {
     max-width: 600px;
     margin-bottom: 20px;
   }
