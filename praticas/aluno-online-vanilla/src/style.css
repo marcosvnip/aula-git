@@ -107,3 +107,7 @@ li {
     margin-bottom: 20px;
   }
 }
+
+.login-page {
+  background: red !important;
+}
