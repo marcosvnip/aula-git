@@ -108,6 +108,95 @@ li {
   }
 }
 
+/* ===== LOGIN PAGE ===== */
+
 .login-page {
-  background: red !important;
+    background-color: #f2f2f2;
 }
+
+/* CENTRALIZAÇÃO */
+.login-page .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CAIXA DO LOGIN */
+.login-page form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* LOGO */
+.login-page .logo {
+    text-align: center;
+}
+
+.login-page .logo img {
+    width: 130px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* TÍTULO */
+.login-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* CAMPOS */
+.login-page .campo {
+    margin-bottom: 15px;
+}
+
+.login-page .campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.login-page .campo input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* BOTÃO */
+.login-page button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login-page button:hover {
+    background-color: #bfbfbf;
+}
+
+/* ERROS */
+.login-page .erro {
+    color: red;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+/* FOOTER */
+.login-page footer {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
