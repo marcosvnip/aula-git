@@ -125,11 +125,11 @@ li {
 
 /* CAIXA DO LOGIN */
 .login-page form {
-    background: color #fff;
+   color:#fff;
     padding: 30px;
     border-radius: 10px;
     width: 350px;
-    box-shadow: 0 4px 10px rgba(0 0 0 / 10%);
+background: rgb(0 0 0 / 10%);
 }
 
 /* LOGO */
