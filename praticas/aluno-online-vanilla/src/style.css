@@ -114,7 +114,6 @@ li {
     background-color: #f2f2f2;
 }
 
-/* CENTRALIZAÇÃO */
 .login-page .container {
     display: flex;
     flex-direction: column;
@@ -123,7 +122,6 @@ li {
     height: 100vh;
 }
 
-/* CAIXA DO LOGIN */
 .login-page form {
    color:#fff;
     padding: 30px;
@@ -132,7 +130,6 @@ li {
 background: rgb(0 0 0 / 10%);
 }
 
-/* LOGO */
 .login-page .logo {
     text-align: center;
 }
@@ -143,14 +140,12 @@ background: rgb(0 0 0 / 10%);
     margin: 0 auto 15px;
 }
 
-/* TÍTULO */
 .login-page h2 {
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-/* CAMPOS */
 .login-page .campo {
     margin-bottom: 15px;
 }
@@ -169,7 +164,6 @@ background: rgb(0 0 0 / 10%);
     outline: none;
 }
 
-/* BOTÃO */
 .login-page button {
     width: 100%;
     padding: 10px;
@@ -185,14 +179,12 @@ background: rgb(0 0 0 / 10%);
     background-color: #bfbfbf;
 }
 
-/* ERROS */
 .login-page .erro {
     color: red;
     font-size: 12px;
     margin-top: 3px;
 }
 
-/* FOOTER */
 .login-page footer {
     margin-top: 10px;
     font-size: 12px;
