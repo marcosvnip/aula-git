@@ -1,0 +1,34 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: linear-gradient(180deg, #2c2c2c, #1f1f1f);
+  color: #fff;
+  padding: 20px 15px;
+}
+
+/* logo */
+.logo {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/* lista */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* itens */
+.sidebar li {
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* hover bonito */
+.sidebar li:hover {
+  background: #3a3a3a;
+  transform: translateX(5px);
+}
