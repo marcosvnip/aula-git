@@ -1,15 +1,16 @@
-import Header from "../Header/Header.jsx"
-import Sidebar from "../Sidebar/Sidebar.jsx"
+import Sidebar from "../Sidebar/Sidebar"
+import Topbar from "../Topbar/Topbar"
 import "./Layout.css"
 
 function Layout({ children }) {
   return (
     <div className="layout">
-      <Header />
       <Sidebar />
-      <main className="content">
+
+      <div className="content">
+        <Topbar />
         {children}
-      </main>
+      </div>
     </div>
   )
 }

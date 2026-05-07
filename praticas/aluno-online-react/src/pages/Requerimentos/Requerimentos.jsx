@@ -1,44 +1,78 @@
-import "./Requerimentos.css";
+import Layout from "../../components/Layout/Layout"
+import "./Requerimentos.css"
+import user from "../../assets/avatar.svg"
+import PageHeader from "../../components/PageHeader/PageHeader"
+<PageHeader
+  titulo="Meus Requerimentos"
+  subtitulo="Faça solicitações online para a secretaria"
+  avatar={user}
+/>
 
 function Requerimentos() {
   return (
-    <div className="dashboard">
+    <Layout>
+      <div className="requerimentos">
 
-      <div className="topo">
-        <h2>Requerimentos</h2>
-          <div className="logo">
-  <img src="./avatar.svg" alt="Logo" />
-</div>
+        <div className="topo">
+          <div>
+            <h2>Meus</h2>
+            <h2>Requerimentos</h2>
+          </div>
+
+          <img src={user} alt="usuário" />
+        </div>
+
+        <h3 className="subtitulo">
+          Faça solicitações online para a secretaria
+        </h3>
+
+        <div className="card">
+          <table>
+            <thead>
+              <tr>
+                <th>Tipo de Requerimento</th>
+                <th>Data de Solicitação</th>
+                <th>Situação</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Revisão de Menção</td>
+                <td>15/12/2025</td>
+                <td className="negado">Indeferido</td>
+              </tr>
+
+              <tr>
+                <td>Dispensa de Disciplina</td>
+                <td>12/06/2025</td>
+                <td className="negado">Indeferido</td>
+              </tr>
+
+              <tr>
+                <td>Trancamento de Matrícula</td>
+                <td>05/01/2024</td>
+                <td className="ok">Deferido</td>
+              </tr>
+
+              <tr>
+                <td>Mudança de Turno</td>
+                <td>10/10/2023</td>
+                <td className="ok">Deferido</td>
+              </tr>
+
+              <tr>
+                <td>Renovação de Matrícula</td>
+                <td>20/02/2023</td>
+                <td className="ok">Deferido</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
       </div>
-
-      <h3 className="titulo-secao">
-        Solicitações
-      </h3>
-
-      <div className="bloco">
-
-        <div className="req-card">
-          <p><strong>Tipo:</strong> Declaração de Matrícula</p>
-          <p><strong>Data:</strong> 10/04/2026</p>
-          <p><strong>Status:</strong> <span className="aprovado">Aprovado</span></p>
-        </div>
-
-        <div className="req-card">
-          <p><strong>Tipo:</strong> Histórico Escolar</p>
-          <p><strong>Data:</strong> 05/04/2026</p>
-          <p><strong>Status:</strong> <span className="pendente">Pendente</span></p>
-        </div>
-
-        <div className="req-card">
-          <p><strong>Tipo:</strong> Segunda Via de Boleto</p>
-          <p><strong>Data:</strong> 01/04/2026</p>
-          <p><strong>Status:</strong> <span className="negado">Negado</span></p>
-        </div>
-
-      </div>
-
-    </div>
-  );
+    </Layout>
+  )
 }
 
-export default Requerimentos;
+export default Requerimentos

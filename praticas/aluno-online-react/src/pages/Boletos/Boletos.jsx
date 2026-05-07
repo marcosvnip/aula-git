@@ -1,70 +1,59 @@
-import "./Boletos.css";
+import Layout from "../../components/Layout/Layout"
+import "./Boletos.css"
+import user from "../../assets/avatar.svg"
+import PageHeader from "../../components/PageHeader/PageHeader"
+<PageHeader
+  titulo="Meus Boletos"
+  subtitulo="Histórico de Pagamentos"
+  avatar={user}
+/>
 
 function Boletos() {
   return (
-    <div className="dashboard">
+    <Layout>
+      <div className="boletos">
 
-      <div className="topo">
-        <h2>Boletos</h2>
-        <div className="logo">
-  <img src="./avatar.svg" alt="Logo" />
-</div>
+        <div className="topo">
+          <h2>Meus Boletos</h2>
+          <img src={user} alt="usuário" />
+        </div>
+
+        <h3 className="subtitulo">
+          Histórico de Pagamentos
+        </h3>
+
+        <div className="card">
+          <table>
+            <thead>
+              <tr>
+                <th>Vencimento</th>
+                <th>Valor R$</th>
+                <th>Situação</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr><td>19/01/2026</td><td>500,00</td><td className="pago">Pago</td></tr>
+              <tr><td>19/02/2026</td><td>500,00</td><td className="atraso">Em atraso</td></tr>
+              <tr><td>19/03/2026</td><td>500,00</td><td>A Pagar</td></tr>
+              <tr><td>19/04/2026</td><td>500,00</td><td>A Pagar</td></tr>
+              <tr><td>19/05/2026</td><td>500,00</td><td>A Pagar</td></tr>
+              <tr><td>19/06/2026</td><td>500,00</td><td>A Pagar</td></tr>
+              <tr><td>19/07/2026</td><td>500,00</td><td>A Pagar</td></tr>
+              <tr><td>19/08/2026</td><td>500,00</td><td>A Pagar</td></tr>
+              <tr><td>19/09/2026</td><td>500,00</td><td>A Pagar</td></tr>
+              <tr><td>19/10/2026</td><td>500,00</td><td>A Pagar</td></tr>
+              <tr><td>19/11/2026</td><td>500,00</td><td>A Pagar</td></tr>
+              <tr><td>19/12/2026</td><td>500,00</td><td>A Pagar</td></tr>
+              <tr><td>19/01/2027</td><td>500,00</td><td>A Pagar</td></tr>
+              <tr><td>19/02/2027</td><td>500,00</td><td>A Pagar</td></tr>
+            </tbody>
+          </table>
+        </div>
+
       </div>
-
-      <h3 className="titulo-secao">
-        Mensalidades
-      </h3>
-
-      <div className="bloco">
-        <table className="tabela">
-          <thead>
-            <tr>
-              <th>Mês</th>
-              <th>Valor</th>
-              <th>Vencimento</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>Janeiro</td>
-              <td>R$ 500,00</td>
-              <td>10/01/2026</td>
-              <td className="pago">Pago</td>
-            </tr>
-
-            <tr>
-              <td>Fevereiro</td>
-              <td>R$ 500,00</td>
-              <td>10/02/2026</td>
-              <td className="pago">Pago</td>
-            </tr>
-
-            <tr>
-              <td>Março</td>
-              <td>R$ 500,00</td>
-              <td>10/03/2026</td>
-              <td className="pendente">Pendente</td>
-            </tr>
-
-            <tr>
-              <td>Abril</td>
-              <td>R$ 500,00</td>
-              <td>10/04/2026</td>
-              <td className="atrasado">Atrasado</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-    </div>
-  );
+    </Layout>
+  )
 }
-<div className="tabela-container">
-  <table className="tabela">
-    ...
-  </table>
-</div>
 
-export default Boletos;
+export default Boletos

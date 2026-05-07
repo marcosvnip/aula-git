@@ -1,16 +1,20 @@
-import Layout from "./components/Layout/Layout";
-import Dashboard from "./pages/Dashboard/Dashboard";
-// import Notas from "./pages/Notas/Notas";
-// import Boletos from "./pages/Boletos/Boletos";
-// import Requerimentos from "./pages/Requerimentos/Requerimentos";
-// import Faltas from "./pages/Faltas/Faltas";
+import "./App.css"
+import Dashboard from "./pages/Dashboard/Dashboard"
+import Notas from "./pages/Notas/Notas"
+import Faltas from "./pages/Faltas/Faltas"
+import Boletos from "./pages/Boletos/Boletos"
+import Requerimentos from "./pages/Requerimentos/Requerimentos"
 
 function App() {
   return (
-    <Layout>
+    <>
       <Dashboard />
-    </Layout>
-  );
+      {/* <Notas /> */}
+      {/* <Faltas /> */}
+      {/* <Boletos /> */}
+      {/* <Requerimentos /> */}
+    </>
+  )
 }
 
-export default App;
+export default App

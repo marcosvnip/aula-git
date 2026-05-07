@@ -1,5 +1,13 @@
 import Layout from "../../components/Layout/Layout"
 import "./Faltas.css"
+import user from "../../assets/avatar.svg"
+import PageHeader from "../../components/PageHeader/PageHeader"
+
+<PageHeader
+  titulo="Minhas Faltas"
+  subtitulo="Histórico de Faltas por Semestre"
+  avatar={user}
+/>
 
 function Faltas() {
   return (
@@ -8,16 +16,15 @@ function Faltas() {
 
         <div className="topo">
           <h2>Minhas Faltas</h2>
-            <div className="logo">
-  <img src="./avatar.svg" alt="Logo" />
-</div>
+          <img src={user} alt="usuário" />
         </div>
 
-        <p className="subtitulo">Histórico de Faltas por Semestre</p>
+        <h3 className="subtitulo">
+          Histórico de Faltas por Semestre
+        </h3>
 
-      
         <div className="card">
-          <h3>2026.1</h3>
+          <h4>2026.1</h4>
 
           <table>
             <thead>
@@ -27,17 +34,20 @@ function Faltas() {
                 <th>% de Presença</th>
               </tr>
             </thead>
+
             <tbody>
               <tr>
                 <td>BI e Data Warehousing</td>
                 <td>0</td>
                 <td>100%</td>
               </tr>
+
               <tr>
                 <td>Construção de Frontend</td>
                 <td>0</td>
                 <td>100%</td>
               </tr>
+
               <tr>
                 <td>Manutenção de Software e Devops</td>
                 <td>0</td>
@@ -47,9 +57,8 @@ function Faltas() {
           </table>
         </div>
 
-       
         <div className="card">
-          <h3>2025.2</h3>
+          <h4>2025.2</h4>
 
           <table>
             <thead>
@@ -59,11 +68,24 @@ function Faltas() {
                 <th>% de Presença</th>
               </tr>
             </thead>
+
             <tbody>
               <tr>
                 <td>Construção de Backend</td>
                 <td>27</td>
                 <td>87.5%</td>
+              </tr>
+
+              <tr>
+                <td>Estrutura de Dados</td>
+                <td>12</td>
+                <td>92%</td>
+              </tr>
+
+              <tr>
+                <td>Gerenciamento de Projetos</td>
+                <td>8</td>
+                <td>95%</td>
               </tr>
             </tbody>
           </table>
