@@ -1,0 +1,19 @@
+.card {
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 1px solid #d0d0d0;
+}
+
+.card h3 {
+  background-color: #dcdcdc;
+  margin: 0;
+  padding: 12px 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card-conteudo {
+  padding: 16px;
+}
